@@ -3,9 +3,8 @@ import React, { Component } from 'react';
 class RestaurantInput extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
-      text: ''
+      text: '',
     };
   };
 
@@ -19,7 +18,7 @@ class RestaurantInput extends Component {
     event.preventDefault();
     this.props.addRestaurant(this.state.text)
     this.setState({
-      text: ''
+      text: '',
     });
   }
 
